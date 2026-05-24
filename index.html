@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="帆新匠墅 �?上海高端别墅石材干挂翻新专家。中海翡翠湖�?套完工案例，葡萄牙米黄法式工艺，业主口碑转介绍�?>
+<meta property="og:title" content="帆新匠墅 · 别墅外立面石材干挂翻�?>
+<meta property="og:description" content="中海翡翠湖岸6套别墅案例，葡萄牙米黄，法式精工�?>
+<meta property="og:image" content="images/villa-33/after.webp">
+<meta property="og:type" content="website">
+<title>帆新匠墅 · 高端别墅外立面翻�?/title>
+<style>
+  :root {
+    --gold: #C5A572;
+    --gold-light: #D4BC8B;
+    --gold-dark: #A8874A;
+    --cream: #F7F3EC;
+    --cream-dark: #EBE3D5;
+    --stone: #8B7D6B;
+    --stone-light: #A89886;
+    --charcoal: #1A1A1A;
+    --charcoal-soft: #2D2D2D;
+    --white: #FFFFFF;
+    --text: #2D2D2D;
+    --text-light: #6B6B6B;
+    --text-on-dark: #E8E0D5;
+    --radius: 8px;
+    --radius-lg: 16px;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+    --shadow-md: 0 4px 20px rgba(0,0,0,0.1);
+    --shadow-lg: 0 8px 40px rgba(0,0,0,0.12);
+    --shadow-gold: 0 4px 24px rgba(197,165,114,0.3);
+    --transition: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  @font-face {
+    font-family: 'Display';
+    src: local('Georgia'), local('Noto Serif SC'), local('SimSun');
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans GB', sans-serif;
+    color: var(--text);
+    background: var(--cream);
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ── */
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 0 2rem;
+    transition: all 0.4s var(--transition);
+    height: 72px;
+    display: flex;
+    align-items: center;
+  }
+  .nav.scrolled {
+    background: rgba(247, 243, 236, 0.92);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-bottom: 1px solid rgba(197,165,114,0.15);
+  }
+  .nav-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-logo {
+    font-family: 'Georgia', 'Noto Serif SC', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 0.08em;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+    transition: color 0.4s var(--transition);
+    text-decoration: none;
+  }
+  .nav.scrolled .nav-logo { color: var(--charcoal); text-shadow: none; }
+  .nav-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 24px;
+    background: var(--gold);
+    color: var(--white);
+    border: none;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    transition: all 0.35s var(--transition);
+    text-decoration: none;
+  }
+  .nav-cta:hover {
+    background: var(--gold-dark);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-gold);
+  }
+
+  /* ── HERO ── */
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background: url('images/villa-33/after.jpg') center/cover no-repeat;
+    transform: scale(1.05);
+    transition: transform 6s ease-out;
+  }
+  .hero.loaded .hero-bg { transform: scale(1); }
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(26,26,26,0.55) 0%,
+      rgba(26,26,26,0.35) 40%,
+      rgba(26,26,26,0.65) 100%
+    );
+  }
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 0 1.5rem;
+    max-width: 720px;
+  }
+  .hero-badge {
+    display: inline-block;
+    padding: 6px 20px;
+    border: 1px solid rgba(197,165,114,0.5);
+    border-radius: 50px;
+    color: var(--gold-light);
+    font-size: 0.85rem;
+    letter-spacing: 0.12em;
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.8s var(--transition) 0.3s forwards;
+  }
+  .hero h1 {
+    font-family: 'Georgia', 'Noto Serif SC', serif;
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    letter-spacing: 0.03em;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.8s var(--transition) 0.5s forwards;
+  }
+  .hero h1 span {
+    color: var(--gold-light);
+  }
+  .hero-sub {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: rgba(255,255,255,0.75);
+    margin-bottom: 2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.8s var(--transition) 0.7s forwards;
+  }
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.8s var(--transition) 0.9s forwards;
+  }
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 36px;
+    background: var(--gold);
+    color: var(--white);
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    transition: all 0.35s var(--transition);
+    text-decoration: none;
+  }
+  .btn-primary:hover {
+    background: var(--gold-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-gold);
+  }
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 36px;
+    background: transparent;
+    color: var(--white);
+    border: 1px solid rgba(255,255,255,0.35);
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    transition: all 0.35s var(--transition);
+    text-decoration: none;
+  }
+  .btn-secondary:hover {
+    border-color: var(--gold);
+    background: rgba(197,165,114,0.12);
+  }
+  .scroll-indicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    opacity: 0;
+    animation: fadeUp 0.8s var(--transition) 1.3s forwards;
+  }
+  .scroll-indicator span {
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    color: rgba(255,255,255,0.5);
+    text-transform: uppercase;
+  }
+  .scroll-line {
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(180deg, rgba(197,165,114,0.6), transparent);
+    animation: scrollPulse 2s ease-in-out infinite;
+  }
+
+  @keyframes fadeUp {
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes scrollPulse {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 1; }
+  }
+
+  /* ── TRUST BAR ── */
+  .trust-bar {
+    background: var(--charcoal);
+    padding: 2rem 1.5rem;
+    position: relative;
+  }
+  .trust-bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+  .trust-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    text-align: center;
+  }
+  .trust-item {
+    padding: 0.5rem;
+  }
+  .trust-number {
+    font-family: 'Georgia', serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--gold-light);
+    line-height: 1;
+    margin-bottom: 0.3rem;
+  }
+  .trust-label {
+    font-size: 0.85rem;
+    color: var(--text-on-dark);
+    opacity: 0.7;
+    letter-spacing: 0.04em;
+  }
+
+  /* ── SECTION ── */
+  .section { padding: 6rem 1.5rem; }
+  .section-narrow { max-width: 1080px; margin: 0 auto; }
+  .section-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    color: var(--gold-dark);
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+  }
+  .section-title {
+    font-family: 'Georgia', 'Noto Serif SC', serif;
+    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+    font-weight: 700;
+    color: var(--charcoal);
+    line-height: 1.25;
+    margin-bottom: 1rem;
+    letter-spacing: 0.02em;
+  }
+  .section-desc {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    max-width: 600px;
+    line-height: 1.8;
+  }
+
+  /* ── CASE ── */
+  .case {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 5rem 1.5rem;
+  }
+  .case + .case { border-top: 1px solid var(--cream-dark); }
+  .case-header {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+  .case-number {
+    font-family: 'Georgia', serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--cream-dark);
+    line-height: 1;
+  }
+  .case-title {
+    font-family: 'Georgia', 'Noto Serif SC', serif;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    font-weight: 700;
+    color: var(--charcoal);
+  }
+  .case-tag {
+    display: inline-block;
+    padding: 4px 14px;
+    background: rgba(197,165,114,0.12);
+    color: var(--gold-dark);
+    font-size: 0.8rem;
+    border-radius: 50px;
+    font-weight: 500;
+  }
+
+  .before-after {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .ba-card {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    aspect-ratio: 16/11;
+    box-shadow: var(--shadow-md);
+  }
+  .ba-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s var(--transition);
+  }
+  .ba-card:hover img { transform: scale(1.03); }
+  .ba-label {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  .ba-label.before {
+    background: rgba(107,107,107,0.7);
+    color: var(--white);
+  }
+  .ba-label.after {
+    background: rgba(197,165,114,0.7);
+    color: var(--white);
+  }
+
+  /* Drone full-width */
+  .drone-shot {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    aspect-ratio: 21/9;
+    box-shadow: var(--shadow-lg);
+  }
+  .drone-shot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .drone-caption {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    padding: 6px 16px;
+    background: rgba(26,26,26,0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: var(--text-on-dark);
+    font-size: 0.85rem;
+    border-radius: 50px;
+    letter-spacing: 0.04em;
+  }
+
+  /* ── CRAFT GALLERY ── */
+  .craft {
+    background: var(--white);
+  }
+  .craft-grid {
+    max-width: 1080px;
+    margin: 3rem auto 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .craft-card {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    aspect-ratio: 4/5;
+    box-shadow: var(--shadow-md);
+  }
+  .craft-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s var(--transition);
+  }
+  .craft-card:hover img { transform: scale(1.04); }
+  .craft-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 50%, rgba(26,26,26,0.5));
+    opacity: 0;
+    transition: opacity 0.4s var(--transition);
+  }
+  .craft-card:hover::after { opacity: 1; }
+  .craft-card-overlay {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    color: var(--white);
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.4s var(--transition);
+  }
+  .craft-card:hover .craft-card-overlay { opacity: 1; transform: translateY(0); }
+  .craft-card-overlay h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  .craft-card-overlay p {
+    font-size: 0.85rem;
+    opacity: 0.8;
+  }
+
+  /* ── FACTORY ── */
+  .factory-grid {
+    max-width: 1080px;
+    margin: 3rem auto 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .factory-card {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    aspect-ratio: 16/10;
+  }
+  .factory-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s var(--transition);
+  }
+  .factory-card:hover img { transform: scale(1.03); }
+
+  /* ── WHY US ── */
+  .why-us { background: var(--charcoal); color: var(--text-on-dark); }
+  .why-us .section-label { color: var(--gold-light); }
+  .why-us .section-title { color: var(--white); }
+  .why-us .section-desc { color: rgba(232,224,213,0.7); }
+  .why-grid {
+    max-width: 900px;
+    margin: 3rem auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    text-align: center;
+  }
+  .why-item {
+    padding: 2rem 1.5rem;
+    background: rgba(255,255,255,0.03);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(255,255,255,0.06);
+    transition: all 0.35s var(--transition);
+  }
+  .why-item:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(197,165,114,0.2);
+    transform: translateY(-4px);
+  }
+  .why-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .why-item h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--gold-light);
+  }
+  .why-item p {
+    font-size: 0.9rem;
+    color: rgba(232,224,213,0.6);
+    line-height: 1.7;
+  }
+
+  /* ── FORM ── */
+  .contact {
+    background: var(--cream);
+  }
+  .form-wrap {
+    max-width: 560px;
+    margin: 3rem auto 0;
+    background: var(--white);
+    padding: 3rem 2.5rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--cream-dark);
+  }
+  .form-wrap h3 {
+    font-family: 'Georgia', 'Noto Serif SC', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--charcoal);
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  .form-wrap > p {
+    text-align: center;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+  }
+  .form-group {
+    margin-bottom: 1.25rem;
+  }
+  .form-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+  }
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--cream-dark);
+    border-radius: var(--radius);
+    font-size: 1rem;
+    font-family: inherit;
+    color: var(--text);
+    background: var(--cream);
+    transition: all 0.3s var(--transition);
+    outline: none;
+  }
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(197,165,114,0.1);
+    background: var(--white);
+  }
+  .form-group textarea { resize: vertical; min-height: 100px; }
+  .form-submit {
+    width: 100%;
+    padding: 14px;
+    background: var(--gold);
+    color: var(--white);
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: all 0.35s var(--transition);
+    margin-top: 0.5rem;
+  }
+  .form-submit:hover {
+    background: var(--gold-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-gold);
+  }
+  .form-note {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: var(--text-light);
+  }
+
+  /* ── FOOTER ── */
+  .footer {
+    background: var(--charcoal);
+    color: rgba(232,224,213,0.5);
+    text-align: center;
+    padding: 3rem 1.5rem;
+    font-size: 0.85rem;
+  }
+  .footer strong {
+    color: var(--gold-light);
+    font-weight: 600;
+  }
+
+  /* ── ANIMATIONS ── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s var(--transition);
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    .section { padding: 4rem 1rem; }
+    .trust-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+    .trust-number { font-size: 1.8rem; }
+    .before-after { grid-template-columns: 1fr; gap: 1rem; }
+    .ba-card { aspect-ratio: 4/3; }
+    .drone-shot { aspect-ratio: 16/9; }
+    .craft-grid { grid-template-columns: 1fr; }
+    .craft-card { aspect-ratio: 16/11; }
+    .factory-grid { grid-template-columns: 1fr; }
+    .why-grid { grid-template-columns: 1fr; gap: 1rem; }
+    .case { padding: 3rem 1rem; }
+    .case-number { font-size: 2.5rem; }
+    .form-wrap { padding: 2rem 1.5rem; }
+    .hero-actions { flex-direction: column; }
+    .btn-primary, .btn-secondary { justify-content: center; }
+    .nav { padding: 0 1rem; height: 60px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">帆新匠墅</a>
+    <a href="#contact" class="nav-cta">预约咨询</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">葡萄牙米�?· 法式精工</div>
+    <h1>让老别�?span>重焕新生</span></h1>
+    <p class="hero-sub">上海高端别墅外立面石材干挂翻新，6套中海翡翠湖岸实景案例，业主口碑信赖之�?/p>
+    <div class="hero-actions">
+      <a href="#cases" class="btn-secondary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        查看案例
+      </a>
+      <a href="#contact" class="btn-primary">
+        获取免费咨询
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-grid">
+    <div class="trust-item">
+      <div class="trust-number">6<span style="font-size:1rem;vertical-align:super;">�?/span></div>
+      <div class="trust-label">中海翡翠湖岸完工</div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-number">2<span style="font-size:1rem;vertical-align:super;">�?/span></div>
+      <div class="trust-label">业主转介绍定�?/div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-number">180<span style="font-size:1rem;vertical-align:super;">�?/span></div>
+      <div class="trust-label">单项目合约体�?/div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-number">100<span style="font-size:1rem;vertical-align:super;">%</span></div>
+      <div class="trust-label">进口葡米原石</div>
+    </div>
+  </div>
+</div>
+
+<!-- CASES -->
+<div id="cases">
+  <!-- 33# -->
+  <div class="case">
+    <div class="case-header reveal">
+      <span class="case-number">33</span>
+      <h2 class="case-title">中海翡翠湖岸 33#</h2>
+      <span class="case-tag">城堡米黄干挂</span>
+    </div>
+    <div class="before-after">
+      <div class="ba-card reveal reveal-delay-1">
+        <img src="images/villa-33/before.webp" alt="33#改造前" loading="lazy">
+        <span class="ba-label before">改造前</span>
+      </div>
+      <div class="ba-card reveal reveal-delay-2">
+        <img src="images/villa-33/during.webp" alt="33#施工�? loading="lazy">
+        <span class="ba-label before">施工过程</span>
+      </div>
+    </div>
+    <div class="drone-shot reveal reveal-delay-3">
+      <img src="images/villa-33/after.webp" alt="33#完工无人机航�? loading="lazy">
+      <div class="drone-caption">无人机航�?· 完工实景</div>
+    </div>
+  </div>
+
+  <!-- 86# -->
+  <div class="case">
+    <div class="case-header reveal">
+      <span class="case-number">86</span>
+      <h2 class="case-title">中海翡翠湖岸 86#</h2>
+      <span class="case-tag">合约 180 �?· 葡米外墙</span>
+    </div>
+    <div class="before-after">
+      <div class="ba-card reveal reveal-delay-1">
+        <img src="images/villa-86/before.webp" alt="86#改造前" loading="lazy">
+        <span class="ba-label before">改造前</span>
+      </div>
+      <div class="ba-card reveal reveal-delay-2">
+        <img src="images/villa-86/during.webp" alt="86#施工�? loading="lazy">
+        <span class="ba-label before">施工过程</span>
+      </div>
+    </div>
+    <div class="drone-shot reveal reveal-delay-3">
+      <img src="images/villa-86/after.webp" alt="86#完工无人机航�? loading="lazy">
+      <div class="drone-caption">无人机航�?· 完工实景</div>
+    </div>
+  </div>
+
+  <!-- 112# -->
+  <div class="case">
+    <div class="case-header reveal">
+      <span class="case-number">112</span>
+      <h2 class="case-title">中海翡翠湖岸 112#</h2>
+      <span class="case-tag">法式葡米 · 精工定制</span>
+    </div>
+    <div class="before-after">
+      <div class="ba-card reveal reveal-delay-1">
+        <img src="images/villa-112/before.webp" alt="112#改造前" loading="lazy">
+        <span class="ba-label before">改造前</span>
+      </div>
+      <div class="ba-card reveal reveal-delay-2">
+        <img src="images/villa-112/after.webp" alt="112#完工实景" loading="lazy">
+        <span class="ba-label after">完工效果</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 77# -->
+  <div class="case">
+    <div class="case-header reveal">
+      <span class="case-number">77</span>
+      <h2 class="case-title">中海翡翠湖岸 77#</h2>
+      <span class="case-tag">业主转介�?· 口碑案例</span>
+    </div>
+    <div class="before-after">
+      <div class="ba-card reveal reveal-delay-1">
+        <img src="images/villa-77/before.webp" alt="77#改造前" loading="lazy">
+        <span class="ba-label before">改造前</span>
+      </div>
+      <div class="ba-card reveal reveal-delay-2">
+        <img src="images/villa-77/after.webp" alt="77#完工实景" loading="lazy">
+        <span class="ba-label after">完工效果</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CRAFT -->
+<div class="craft section">
+  <div class="section-narrow">
+    <div class="section-label reveal">Craftsmanship</div>
+    <h2 class="section-title reveal">法式葡米 · 杰作工法</h2>
+    <p class="section-desc reveal">纯正葡萄牙米黄原石进口，法式雕刻线条，每一处细节经得起百年风雨考验</p>
+  </div>
+  <div class="craft-grid">
+    <div class="craft-card reveal reveal-delay-1">
+      <img src="images/craft/detail-1.webp" alt="法式葡米雕花细节" loading="lazy">
+      <div class="craft-card-overlay">
+        <h4>法式雕花线条</h4>
+        <p>手工雕刻 · 欧式经典</p>
+      </div>
+    </div>
+    <div class="craft-card reveal reveal-delay-2">
+      <img src="images/craft/detail-2.webp" alt="葡萄牙米黄细�? loading="lazy">
+      <div class="craft-card-overlay">
+        <h4>葡萄牙米黄原�?/h4>
+        <p>进口矿源 · 天然纹理</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FACTORY -->
+<div class="section">
+  <div class="section-narrow">
+    <div class="section-label reveal">Quality Control</div>
+    <h2 class="section-title reveal">自有工厂 · 品质溯源</h2>
+    <p class="section-desc reveal">从矿山选材到工厂精加工，全链路品质把控，确保每一块石材完美交�?/p>
+  </div>
+  <div class="factory-grid">
+    <div class="factory-card reveal reveal-delay-1">
+      <img src="images/factory/factory-1.webp" alt="自有工厂加工" loading="lazy">
+    </div>
+    <div class="factory-card reveal reveal-delay-2">
+      <img src="images/factory/factory-2.webp" alt="工厂加工细节" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<!-- WHY US -->
+<div class="why-us section">
+  <div class="section-narrow">
+    <div class="section-label reveal">Why Us</div>
+    <h2 class="section-title reveal">为什么选择帆新匠墅</h2>
+    <p class="section-desc reveal">六大核心优势，让每一栋别墅都成为传世之作</p>
+  </div>
+  <div class="why-grid">
+    <div class="why-item reveal reveal-delay-1">
+      <div class="why-icon">🏠</div>
+      <h4>同小�?套实�?/h4>
+      <p>中海翡翠湖岸可实地参观，真假品质一目了�?/p>
+    </div>
+    <div class="why-item reveal reveal-delay-2">
+      <div class="why-icon">🤝</div>
+      <h4>业主转介绍品�?/h4>
+      <p>2套来自老业主推荐，口碑是最大的信任�?/p>
+    </div>
+    <div class="why-item reveal reveal-delay-3">
+      <div class="why-icon">⛏️</div>
+      <h4>进口葡米原石</h4>
+      <p>葡萄牙矿源直采，色泽温润百年不褪</p>
+    </div>
+    <div class="why-item reveal reveal-delay-1">
+      <div class="why-icon">🏭</div>
+      <h4>自有工厂加工</h4>
+      <p>杜绝中间商差价，品质与成本双重把�?/p>
+    </div>
+    <div class="why-item reveal reveal-delay-2">
+      <div class="why-icon">📐</div>
+      <h4>法式精工工艺</h4>
+      <p>30年经验匠人团队，干挂系统终身质保</p>
+    </div>
+    <div class="why-item reveal reveal-delay-3">
+      <div class="why-icon">📋</div>
+      <h4>透明合约流程</h4>
+      <p>报价即决算，施工过程全透明无增�?/p>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT FORM -->
+<div class="contact section" id="contact">
+  <div class="section-narrow">
+    <div class="section-label reveal">Contact</div>
+    <h2 class="section-title reveal" style="text-align:center;">预约免费上门勘测</h2>
+    <p class="section-desc reveal" style="text-align:center;margin:0 auto;">留下联系方式，汪�?4小时内亲自回电，免费上门评估别墅石材状况</p>
+  </div>
+  <div class="form-wrap reveal">
+    <h3>获取专属翻新方案</h3>
+    <p>填写信息，获取免费勘测与报价</p>
+    <form id="leadForm" onsubmit="handleSubmit(event)">
+      <div class="form-group">
+        <label for="name">您的称呼 *</label>
+        <input type="text" id="name" name="name" placeholder="请输入您的称�? required>
+      </div>
+      <div class="form-group">
+        <label for="phone">联系电话 *</label>
+        <input type="tel" id="phone" name="phone" placeholder="请输入您的手机号�? required>
+      </div>
+      <div class="form-group">
+        <label for="community">别墅小区</label>
+        <select id="community" name="community">
+          <option value="">请选择（选填�?/option>
+          <option value="中海翡翠湖岸">中海翡翠湖岸</option>
+          <option value="佘山高尔夫郡">佘山高尔夫郡</option>
+          <option value="佘山月湖山庄">佘山月湖山庄</option>
+          <option value="上海紫园">上海紫园</option>
+          <option value="佘山银湖别墅">佘山银湖别墅</option>
+          <option value="其他">其他小区</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">需求描�?/label>
+        <textarea id="message" name="message" placeholder="简单描述您的需求，如：外立面翻新面积、风格偏好等"></textarea>
+      </div>
+      <button type="submit" class="form-submit">提交申请 · 获取免费勘测</button>
+    </form>
+    <p class="form-note">或直接致电汪总获取即时咨�?/p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2026 <strong>帆新匠墅</strong> · 上海青浦区赵巷镇 · 高端别墅石材干挂翻新</p>
+  <p style="margin-top:0.5rem;opacity:0.5;">中海翡翠湖岸 33# · 77# · 86# · 112# �?6 套实景案例可预约参观</p>
+</footer>
+
+<script>
+  // Hero loaded animation
+  window.addEventListener('load', () => {
+    document.querySelector('.hero').classList.add('loaded');
+  });
+
+  // Nav scroll effect
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 50);
+  });
+
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        const navHeight = 80;
+        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight;
+        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+      }
+    });
+  });
+
+  // Form submission
+  function handleSubmit(event) {
+    event.preventDefault();
+    const form = document.getElementById('leadForm');
+    const btn = form.querySelector('.form-submit');
+    const name = form.querySelector('#name').value;
+    const phone = form.querySelector('#phone').value;
+
+    if (!name || !phone) return;
+
+    // TODO: Replace with your backend endpoint or Formspree
+    // For now, show success message
+    btn.textContent = '提交成功 �?;
+    btn.style.background = '#4A7C59';
+    btn.disabled = true;
+
+    // Collect form data
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+    console.log('Lead captured:', data);
+
+    // Optionally send to Formspree or other free service
+    // fetch('https://formspree.io/f/YOUR_FORM_ID', {
+    //   method: 'POST',
+    //   body: formData,
+    //   headers: { 'Accept': 'application/json' }
+    // });
+
+    setTimeout(() => {
+      btn.textContent = '已收�?· 24小时内联系您';
+    }, 500);
+  }
+</script>
+
+</body>
+</html>
